@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: midnightblue;
+    border-radius: 15px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 30px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    padding: 40px 16px; /* 增加上下間距 */
+    text-decoration: none;
+    font-size: 25px; /* 調整字體大小 */
+    font-family: 'Helvetica', sans-serif; /* 使用其他字體，如Helvetica */
+    transition: background-color 0.3s ease, color 0.3s ease; /* 加入過渡效果 */
+    border-radius: 15px; /* 將功能列設置成圓角形狀 */
+}
+
+.navbar li a:hover {
+    background-color: #FFD700; /* 鼠標懸停時的背景顏色 */
+    color: midnightblue; /* 鼠標懸停時的文字顏色 */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%; /* 設置下拉選單相對於父元素的位置，這裡設置為100%表示下拉選單出現在父元素的下方 */
+    left: 0;
+    display: none;
+    background-color: #FFD700;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 15px; /* 將下拉選單設置成圓角形狀 */
+    text-decoration-color: midnightblue;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease; /* 加入過渡效果 */
+    border-radius: 15px; /* 將下拉選單項目設置成圓角形狀 */
+}
+
+.dropdown-content a:hover {
+    background-color: lightskyblue; /* 鼠標懸停時的背景顏色 */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.logo img {
+    width: 105px; /* 設置logo的寬度 */
+    height: 75px; /* 設置logo的高度 */
+    margin: 6px; /* 可以調整logo與其他元素之間的間距 */
+    border-radius: 15px;
+}
