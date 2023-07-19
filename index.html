@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>下拉網頁功能範例</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar li {
+            display: flex;
+            align-items: center; /* 讓icon與文字垂直居中對齊 */
+        }
+
+        .navbar li a {
+            display: block;
+            color: white;
+            padding: 20px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: 'Helvetica', sans-serif;
+        }
+
+        /* 調整icon的大小 */
+        .navbar li i {
+            font-size: 24px; /* 調整icon的大小，這裡設置為24像素 */
+        }
+
+        /* 調整icon的顏色 */
+        .navbar li i {
+            color: #FFD700; /* 設置icon的顏色為藍色 */
+        }
+
+        /* 調整icon的位置 */
+        .navbar li i {
+            margin-right: 10px; /* 設置icon與文字之間的間距，這裡設置為10像素 */
+        }
+
+        /* 調整dropdown的文字為"More" */
+        .navbar .dropdown .dropbtn {
+            font-size: 18px;
+        }
+
+        /* 調整book icon的顏色 */
+        .navbar .fas.fa-book {
+            color: white; /* 設置book icon的顏色為藍色，與其他icon相同 */
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <ul>
+        <div class="logo">
+            <img src="https://i.imgur.com/snFLcOm.png" alt="Logo">
+        </div>
+        <li><i class="fas fa-home"></i><a href="#">Home</a></li>
+        <li><i class="fas fa-search"></i><a href="#">Search</a></li>
+        <li><i class="fas fa-calendar"></i><a href="#">Calendar</a></li>
+        <li><i class="fas fa-envelope"></i><a href="#">Message</a></li>
+        <li><i class="fas fa-bell"></i><a href="#">Notification</a></li>
+        <li><i class="fas fa-file"></i><a href="#">Resource</a></li>
+        <li><i class="fas fa-edit"></i><a href="#">Post</a></li>
+        <li><i class="fas fa-user"></i><a href="#">Profile</a></li>
+        <!-- 更改為More -->
+        <li class="dropdown">
+            <a href="#" class="dropbtn">More</a>
+            <div class="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
